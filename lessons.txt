@@ -149,3 +149,25 @@ Branch:
         Rename global init.defaultBranch:
             git config --global --unset-all init.defaultBranch
             git config --list
+            git config --add --global init.defaultBranch main
+
+
+    New Branch:
+        Create a new Branch, but stay in main branch:
+            command: git branch my_new_branch
+        Create a new Branch and switch to it:
+            command: git switch -c my_new_branch
+
+            The -c flag tells Git to create a new branch if it doesn't already exist.
+        
+        When you create a new branch, it uses the current commit you are on as the branch base. 
+        For Example: 
+        if you are on main branch with 3 commits, A, B, C and then run :
+            git switch -c my_new_branch
+        it will look like this:
+            add_classics
+        A B C 
+             main
+        
+        You can view the logs of a branch:
+            command git log <branch_name>
