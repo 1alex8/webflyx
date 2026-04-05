@@ -135,3 +135,6 @@ Branch:
     you can create a new branch called color_scheme and work on that branch. When you're done, if you like the changes, 
     you can merge the color_scheme branch back into the master branch to keep the changes. 
     If you don't like the changes, you can simply delete the color_scheme branch and go back to the master branch.
+
+        Check which branch you're currently on:
+        command: git branch
