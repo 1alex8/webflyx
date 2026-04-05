@@ -52,6 +52,7 @@ log
         
         git log --oneline
             The  commit hashes are only the necessary chars
+        git log --oneline --graph --all
 
 
 Hash
