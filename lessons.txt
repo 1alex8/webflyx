@@ -41,6 +41,15 @@ log
 
         Most used by me:
         git log -n 10 -- parents --graph
+        git --no-pager log -n 10 --parents --graph
+        
+            to not end up in the lesser or pager view 
+            if i should not use no-pager:
+                q: to get out of the pager view
+                Space : to scroll a page down
+                b: to scroll a page up
+                /Searchterm: search
+
 
 Hash
     The hash is the identifier for commits, it is cryptograhic via SHA-1
