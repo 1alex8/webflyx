@@ -41,3 +41,14 @@ log
 
         Most used by me:
         git log -n 10 -- parents --graph
+
+Hash
+    The hash is the identifier for commits, it is cryptograhic via SHA-1
+    It is moded by.
+    The authors name and mail
+    The time and location
+    and other shit 
+    the first 7 chars should always be able to identify the author in the same repo
+
+    command: git cat-file -p <hash>
+            allos us to see the contents of a commit
