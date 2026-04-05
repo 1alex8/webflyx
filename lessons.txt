@@ -52,3 +52,4 @@ Hash
 
     command: git cat-file -p <hash>
             allos us to see the contents of a commit
+            my Hash example: 5a3b9cc371443f76de49f4be40b278680b925219
