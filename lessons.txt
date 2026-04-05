@@ -196,3 +196,10 @@ Merge:
         - press: ESC
         - press: :wq
         - press: Enter
+
+    Common Workflow when merging:
+        1. Create a Branch
+        2. Make the change
+        3. Merge the branch into main
+        4. Remove the branch
+        5. Repeat
