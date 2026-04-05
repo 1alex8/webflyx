@@ -124,3 +124,14 @@ Locations:
     Overrides:
         If you set a config in a more specific location, it will override the same configuration in a more general location.
         For Example: user.name in local overrides user.name in global; user.name in global overrides user.name in system
+
+
+
+Branch:
+    A Git branch allows you to keep track of diffrent changes seperately.
+
+    For example, let's say you have a big web project and you want to experiment with changing the color scheme. 
+    Instead of changing the entire project directly (as of right now, our master branch), 
+    you can create a new branch called color_scheme and work on that branch. When you're done, if you like the changes, 
+    you can merge the color_scheme branch back into the master branch to keep the changes. 
+    If you don't like the changes, you can simply delete the color_scheme branch and go back to the master branch.
