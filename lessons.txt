@@ -1,7 +1,9 @@
-Command : git init
+Inititalize Repo
+    Command : git init
             Inititalizes a repo, must be executed in the working dir
 
-Command: ls -hidden / ls -a
+Show hidden content of dir
+    Command: ls -hidden / ls -a
             Shows all Dirs even the hidden ones 1 for Ps and 2 for bash
 
 A File can be one of several states in a git Repo. Important ones:
@@ -10,6 +12,15 @@ A File can be one of several states in a git Repo. Important ones:
             - staged: Marked for inclusion in the next commit
             - committed : Saved to the repo's history
         
-Command: git status 
+Status
+    Command: git status 
             Shows you the current state of your repo. It will tell
             you which files are untracked, staged and committed
+
+Add to Repo
+    git add [path to file] || git add .
+            first adds a single file to what will be committed; second adds everything
+            use "git rm --cached <file>..." to unstage
+
+Commit:
+    git commit -m "your message here"
