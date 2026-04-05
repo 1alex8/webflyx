@@ -188,3 +188,10 @@ Merge:
         - Replays the changes from add_classics onto main starting from the Merge_base
         - Records the result as a new commit
         - The new commit is special because it has two parents
+
+        If we do this: we end up in vim:
+        - to write press : :i
+        - enter your merge message
+        - press: ESC
+        - press: :wq
+        - press: Enter
