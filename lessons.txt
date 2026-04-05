@@ -128,13 +128,24 @@ Locations:
 
 
 Branch:
-    A Git branch allows you to keep track of diffrent changes seperately.
+        A Git branch allows you to keep track of diffrent changes seperately.
 
-    For example, let's say you have a big web project and you want to experiment with changing the color scheme. 
-    Instead of changing the entire project directly (as of right now, our master branch), 
-    you can create a new branch called color_scheme and work on that branch. When you're done, if you like the changes, 
-    you can merge the color_scheme branch back into the master branch to keep the changes. 
-    If you don't like the changes, you can simply delete the color_scheme branch and go back to the master branch.
+        For example, let's say you have a big web project and you want to experiment with changing the color scheme. 
+        Instead of changing the entire project directly (as of right now, our master branch), 
+        you can create a new branch called color_scheme and work on that branch. When you're done, if you like the changes, 
+        you can merge the color_scheme branch back into the master branch to keep the changes. 
+        If you don't like the changes, you can simply delete the color_scheme branch and go back to the master branch.
 
-        Check which branch you're currently on:
+    Check which branch you're currently on:
         command: git branch
+
+    Rename: branch
+        command: git branch -m oldname newname
+
+
+        Github's default master branch changed the name to "main". If you work primarily with github or Codeberg
+        you should name your init.defaultBranch "main"
+
+        Rename global init.defaultBranch:
+            git config --global --unset-all init.defaultBranch
+            git config --list
