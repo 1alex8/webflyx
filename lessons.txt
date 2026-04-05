@@ -24,3 +24,10 @@ Add to Repo
 
 Commit:
     git commit -m "your message here"
+
+log
+    command: git log
+            shows a history of commits in a repo.
+            - Who made the commit
+            - When the commit was made
+            - What was changed
