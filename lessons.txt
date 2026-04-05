@@ -171,3 +171,10 @@ Branch:
         
         You can view the logs of a branch:
             command git log <branch_name>
+
+
+Merge:
+        "What's the point of having multiple branches?" you might ask. 
+        They're most often used to safely make changes without affecting your (or your team's) primary branch. 
+        However, once you're happy with your changes, 
+        you'll want to merge them back into the main branch so that they make their way into the final product.
