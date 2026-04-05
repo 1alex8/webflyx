@@ -207,3 +207,5 @@ Merge:
             I have created a Branch 
             made a change in add_new_classics
             made a change in add_new_classics
+            merged
+            deleted add_new_classics
