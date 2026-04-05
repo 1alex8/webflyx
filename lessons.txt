@@ -57,3 +57,7 @@ Hash
             if i now use git catfile <tree-hash> it displays the contets of the tree.
             if i now use the <file hash> it displays the content of the file
             <File-hash> is after "blob"
+
+Trees and Blobs
+    tree: Git's way of storing a directory
+    blob: Gis's way of storing a file
