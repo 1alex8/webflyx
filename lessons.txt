@@ -179,3 +179,12 @@ Merge:
         They're most often used to safely make changes without affecting your (or your team's) primary branch. 
         However, once you're happy with your changes, 
         you'll want to merge them back into the main branch so that they make their way into the final product.
+
+    We merge add_classics into main by runnig this while on main:
+        command: git merge add_classics
+
+        This merge will:
+        - find the merge base commit, or best common ancestor of the two branches
+        - Replays the changes from add_classics onto main starting from the Merge_base
+        - Records the result as a new commit
+        - The new commit is special because it has two parents
