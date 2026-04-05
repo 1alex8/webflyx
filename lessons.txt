@@ -113,4 +113,10 @@ Config:
 
     git config --remove-section <section>
         used to remove entire section out of the .gitconfig (don't forget to use local if you want to do that on your local gitconfig)
-        
+
+Locations:
+    There are several locations where Git can be configured . From more general to more specific:
+    - system: /etc/gitconfig; a file that configures git for all users on the system
+    - global: ~/.gitconfig; a file that configures git for all projects of a user
+    - local: .git/config; a file that configures git for a specific projects
+    - worktree: ./git/config.worktree; a file that configures git for a part of a project
