@@ -49,6 +49,9 @@ log
                 Space : to scroll a page down
                 b: to scroll a page up
                 /Searchterm: search
+        
+        git log --oneline
+            The  commit hashes are only the necessary chars
 
 
 Hash
