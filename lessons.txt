@@ -209,3 +209,6 @@ Merge:
             made a change in add_new_classics
             merged
             deleted add_new_classics
+        
+        delete branch, but keep in mind to be in main
+        command: git branch -d add_new_clasics
