@@ -110,3 +110,7 @@ Config:
     git config --unset-all <key>
         it unsets all instances of that section.key for example if you have multiple instances of : company.ceo
         best example: if you have changed the init.defaultbranch a few times and want to clean up
+
+    git config --remove-section <section>
+        used to remove entire section out of the .gitconfig (don't forget to use local if you want to do that on your local gitconfig)
+        
