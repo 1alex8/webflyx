@@ -96,3 +96,8 @@ Config:
             user:        The section
             name:        The key within the section
             "1alex8"     The value you want to set for the key
+        
+        we can also store anything in it, but you should only do it in the "local" .gitconfig
+            Example:
+            git config --add --local company.ceo "Alex"
+            git config --add --local company.cto "Felix"
