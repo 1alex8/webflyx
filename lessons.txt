@@ -1,0 +1,15 @@
+Command : git init
+            Inititalizes a repo, must be executed in the working dir
+
+Command: ls -hidden / ls -a
+            Shows all Dirs even the hidden ones 1 for Ps and 2 for bash
+
+A File can be one of several states in a git Repo. Important ones:
+
+            - untracked: Not being tracked by git
+            - staged: Marked for inclusion in the next commit
+            - committed : Saved to the repo's history
+        
+Command: git status 
+            Shows you the current state of your repo. It will tell
+            you which files are untracked, staged and committed
