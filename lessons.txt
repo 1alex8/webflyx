@@ -52,4 +52,8 @@ Hash
 
     command: git cat-file -p <hash>
             allos us to see the contents of a commit
-            my Hash example: 5a3b9cc371443f76de49f4be40b278680b925219
+            my Hash example: 5a3b9cc371443f76de49f4be40b278680b925219.
+            after adding my personal which would be the first 7 i see the hash of the tree,
+            if i now use git catfile <tree-hash> it displays the contets of the tree.
+            if i now use the <file hash> it displays the content of the file
+            <File-hash> is after "blob"
