@@ -52,6 +52,7 @@ log
         
         git log --oneline
             The  commit hashes are only the necessary chars
+        git log --oneline --graph --all
 
 
 Hash
@@ -149,3 +150,41 @@ Branch:
         Rename global init.defaultBranch:
             git config --global --unset-all init.defaultBranch
             git config --list
+            git config --add --global init.defaultBranch main
+
+
+    New Branch:
+        Create a new Branch, but stay in main branch:
+            command: git branch my_new_branch
+        Create a new Branch and switch to it:
+            command: git switch -c my_new_branch
+
+            The -c flag tells Git to create a new branch if it doesn't already exist.
+        
+        When you create a new branch, it uses the current commit you are on as the branch base. 
+        For Example: 
+        if you are on main branch with 3 commits, A, B, C and then run :
+            git switch -c my_new_branch
+        it will look like this:
+            add_classics
+        A B C 
+             main
+        
+        You can view the logs of a branch:
+            command git log <branch_name>
+
+
+Merge:
+        "What's the point of having multiple branches?" you might ask. 
+        They're most often used to safely make changes without affecting your (or your team's) primary branch. 
+        However, once you're happy with your changes, 
+        you'll want to merge them back into the main branch so that they make their way into the final product.
+
+    We merge add_classics into main by runnig this while on main:
+        command: git merge add_classics
+
+        This merge will:
+        - find the merge base commit, or best common ancestor of the two branches
+        - Replays the changes from add_classics onto main starting from the Merge_base
+        - Records the result as a new commit
+        - The new commit is special because it has two parents
