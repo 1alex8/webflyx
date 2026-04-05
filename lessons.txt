@@ -120,3 +120,6 @@ Locations:
     - global: ~/.gitconfig; a file that configures git for all projects of a user
     - local: .git/config; a file that configures git for a specific projects
     - worktree: ./git/config.worktree; a file that configures git for a part of a project
+
+    If you set a config in a more specific location, it will override the same configuration in a more general location.
+    For Example: user.name in local overrides user.name in global; user.name in global overrides user.name in system
