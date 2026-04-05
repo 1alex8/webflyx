@@ -82,3 +82,17 @@ Optimization:
     - git compresses and packs files to store them more efficiently
     - git deduplicates files that are the same across diffrent commits.
       If a File doesn't change between commits, Git will only store it once
+
+
+
+Config:
+    git config --add --global user.name "Github/Codeberg username"
+    git config --add --global user.email "Github/Codeberg E-mail"
+
+        Take apart:
+            git config: the command to interact with the .gitconfig File
+            --add :      Flag stating you want to add a configuration
+            --global:    Flag stating you want this cofig to be stored globally in your .gitconfig File The opposite is "local", which stores the configuration in the current repo only
+            user:        The section
+            name:        The key within the section
+            "1alex8"     The value you want to set for the key
