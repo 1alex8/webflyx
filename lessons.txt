@@ -53,6 +53,7 @@ log
         git log --oneline
             The  commit hashes are only the necessary chars
         git log --oneline --graph --all
+        git log --oneline --decorate --graph --all --parents
 
 
 Hash
