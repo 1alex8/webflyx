@@ -33,8 +33,11 @@ log
             - What was changed
     
     git --no-pager log -n 10 --oneline --parents --graph
-            no-pager: does it through stdout
+            no-pager: does it through stdout//doesn't exist on PowerShell
             -n 10 : last 10 commits
             --oneline: google it
             --parents : shows parents
             --graph is a graphical illustration of how branches merged and more
+
+        Most used by me:
+        git log -n 10 -- parents --graph
