@@ -70,3 +70,12 @@ Hash
 Trees and Blobs
     tree: Git's way of storing a directory
     blob: Gis's way of storing a file
+
+Storing Data:
+    Git stores entire Snapshots of files on a per-commit level. Not as thought: only the changes
+
+Optimization: 
+    It does have some performance Optimizations:
+    - git compresses and packs files to store them more efficiently
+    - git deduplicates files that are the same across diffrent commits.
+      If a File doesn't change between commits, Git will only store it once
