@@ -273,5 +273,29 @@ Rebase:
 RESET
 
     Undoing changes
-        One of the majo benefits of using Git is the ability to undo changes. There are a lot of diffrent ways to do this, 
-        but first, we'll start by going back in the commit history without discarding changes
+            One of the majo benefits of using Git is the ability to undo changes. There are a lot of diffrent ways to do this, 
+            but first, we'll start by going back in the commit history without discarding changes
+
+        GIT RESET SOFT
+            The git reset command can be used to undo the last commit(s) 
+            or any changes in the index (staged but not committed changes) 
+            and the worktree (unstaged and not committed changes).
+
+            Command: git reset --soft COMMITHASH
+
+            The --soft option is useful if you just want to go back to a previous commit, 
+            but keep all of your changes. Committed changes will be uncommitted and staged, 
+            while uncommitted changes will remain staged or unstaged as before.
+
+        Diffrence between Committed and staged:
+
+            Command: git diff --staged
+
+        GIT RESET HARD 
+            In the last lesson, we undid a commit but kept the changes. 
+            We don't want to keep the changes to titles.md, 
+            here's how to reset those changes:
+
+            Command: git reset --hard COMMITHASH
+
+            This is useful if you just want to go back to a previous commit and discard all the changes.
