@@ -498,3 +498,23 @@ GITIGNORE
             you probably want to ignore automatically generated files like .pyc and __pycache__. 
             If you are building a server, you probably want to ignore .env files that might hold private keys. 
             If you (I'm sorry) work with JavaScript, you might want to ignore the node_modules directory.
+
+
+            Here's and example ".gitignore" file, which exists at the root of your repo:
+
+            File contains:
+                node_modules
+
+            
+            This will ignore every path containing "node_modules" as a "section"
+            (directory name or file name). It ignores:
+
+            * node_modules/code.js 
+            * src/node_modules/code.js 
+            * src/node_modules 
+
+            It doesn't ignore:
+            * src/node_modules2/code.js 
+            * env/node_modules_3
+
+            
