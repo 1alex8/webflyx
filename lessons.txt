@@ -378,8 +378,24 @@ GIT REMOTE
                 * As a central place to share your code and collaborate on it with others
                 * As a public portfolio for your coding projects
 
-        GIT != Github
+    GIT != Github
             It's important to understand that Git and GitHub are not the same! 
             Git is an open-source command line tool for managing code files. 
             GitHub and its primary competitors, GitLab and Bitbucket, are commercial web products that use Git. 
             Their websites give us a way to store our code that's managed by Git.
+
+    Assignemnt
+            Create a new repository on GitHub called webflyx. 
+            Leave it completely blank, and make sure it's public (for now, you can always change it later).
+
+            Authenticate your local Git configuration with your GitHub account. 
+            I recommend installing the GitHub CLI. One quick and easy installation method is to use winget by simply running:
+
+             winget install --id GitHub.cli
+            
+            gh auth login
+
+            now add a remote to this repo by running
+        
+        Command: 
+            git remote add origin <git repo https>
