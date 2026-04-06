@@ -155,100 +155,100 @@ Branch:
 
 
     New Branch:
-        Create a new Branch, but stay in main branch:
-            command: git branch my_new_branch
-        Create a new Branch and switch to it:
-            command: git switch -c my_new_branch
+            Create a new Branch, but stay in main branch:
+        command: git branch my_new_branch
+            Create a new Branch and switch to it:
+        command: git switch -c my_new_branch
 
             The -c flag tells Git to create a new branch if it doesn't already exist.
 
             if we want to make a branch of an older commit :
             git switch -c new_branch_name <old commit hash>
         
-        When you create a new branch, it uses the current commit you are on as the branch base. 
-        For Example: 
-        if you are on main branch with 3 commits, A, B, C and then run :
-            git switch -c my_new_branch
-        it will look like this:
-            add_classics
-        A B C 
-             main
-        
-        You can view the logs of a branch:
-            command git log <branch_name>
+            When you create a new branch, it uses the current commit you are on as the branch base. 
+            For Example: 
+            if you are on main branch with 3 commits, A, B, C and then run :
+                git switch -c my_new_branch
+            it will look like this:
+                add_classics
+            A B C 
+                main
+            
+            You can view the logs of a branch:
+        command git log <branch_name>
 
 
 Merge:
-        "What's the point of having multiple branches?" you might ask. 
-        They're most often used to safely make changes without affecting your (or your team's) primary branch. 
-        However, once you're happy with your changes, 
-        you'll want to merge them back into the main branch so that they make their way into the final product.
+            "What's the point of having multiple branches?" you might ask. 
+            They're most often used to safely make changes without affecting your (or your team's) primary branch. 
+            However, once you're happy with your changes, 
+            you'll want to merge them back into the main branch so that they make their way into the final product.
 
-    We merge add_classics into main by runnig this while on main:
+            we need to be in main and merge add_ classics
         command: git merge add_classics
 
-        This merge will:
-        - find the merge base commit, or best common ancestor of the two branches
-        - Replays the changes from add_classics onto main starting from the Merge_base
-        - Records the result as a new commit
-        - The new commit is special because it has two parents
+            This merge will:
+            - find the merge base commit, or best common ancestor of the two branches
+            - Replays the changes from add_classics onto main starting from the Merge_base
+            - Records the result as a new commit
+            - The new commit is special because it has two parents
 
-        If we do this: we end up in vim:
-        - to write press : :i
-        - enter your merge message
-        - press: ESC
-        - press: :wq
-        - press: Enter
+            If we do this: we end up in vim:
+            - to write press : :i
+            - enter your merge message
+            - press: ESC
+            - press: :wq
+            - press: Enter
 
     Common Workflow when merging:
-        1. Create a Branch
-        2. Make the change
-        3. Merge the branch into main
-        4. Remove the branch
-        5. Repeat
+            1. Create a Branch
+            2. Make the change
+            3. Merge the branch into main
+            4. Remove the branch
+            5. Repeat
 
-            I have created a Branch 
-            made a change in add_new_classics
-            made a change in add_new_classics
-            merged
-            deleted add_new_classics
-        
-        delete branch, but keep in mind to be in main
+                I have created a Branch 
+                made a change in add_new_classics
+                made a change in add_new_classics
+                merged
+                deleted add_new_classics
+            
+            delete branch, but keep in mind to be in main
         command: git branch -d add_new_clasics
 
 Rebase:
 
     Visualize Rebase:
-        Say we have this commit history:
-        A - B - C    main
-        \
-         D - E      feature_branch
+            Say we have this commit history:
+            A - B - C    main
+            \
+            D - E      feature_branch
 
-        We're working on feature_branch, and want to bring in the changes our team added to main 
-        so we're not working with a stale branch. 
-        We could merge main into feature_branch, but that would create an additional merge commit. 
-        Rebase avoids a merge commit by replaying the commits from feature_branch on top of main. 
-        After a rebase, the history will look like this:
+            We're working on feature_branch, and want to bring in the changes our team added to main 
+            so we're not working with a stale branch. 
+            We could merge main into feature_branch, but that would create an additional merge commit. 
+            Rebase avoids a merge commit by replaying the commits from feature_branch on top of main. 
+            After a rebase, the history will look like this:
 
-        A - B - C    main
-                \
-                D - E  feature_branch
+            A - B - C    main
+                    \
+                    D - E  feature_branch
 
     Rebase command:
         
-        So if we create a branch from an old hash:
-        git switch -c new_branch_name <old commit hash>
+            So if we create a branch from an old hash:
+            git switch -c new_branch_name <old commit hash>
 
-        and have made changes we can now put feature branch at the top by:
+            and have made changes we can now put feature branch at the top by:
 
-        git rebase main
+        command: git rebase main
 
-        Important: we need to be in feature_branch and rebase main not the other way around.
+            Important: we need to be in feature_branch and rebase main not the other way around.
 
-        IF IT ALL FAILS AND WE HAVE A DOZEN REBASE CONFLICTS, WE CAN REVERT THE REBASE,
-        TO THE STATE BEFORE THE REBASE:
+            IF IT ALL FAILS AND WE HAVE A DOZEN REBASE CONFLICTS, WE CAN REVERT THE REBASE,
+            TO THE STATE BEFORE THE REBASE:
 
-            command: git rebase --abort
+        command: git rebase --abort
 
         
     When to rebase
@@ -276,12 +276,12 @@ RESET
             One of the majo benefits of using Git is the ability to undo changes. There are a lot of diffrent ways to do this, 
             but first, we'll start by going back in the commit history without discarding changes
 
-        GIT RESET SOFT
+    GIT RESET SOFT
             The git reset command can be used to undo the last commit(s) 
             or any changes in the index (staged but not committed changes) 
             and the worktree (unstaged and not committed changes).
 
-            Command: git reset --soft COMMITHASH
+        Command: git reset --soft COMMITHASH
 
             The --soft option is useful if you just want to go back to a previous commit, 
             but keep all of your changes. Committed changes will be uncommitted and staged, 
@@ -289,29 +289,29 @@ RESET
 
         Diffrence between Committed and staged:
 
-            Command: git diff --staged
+        Command: git diff --staged
 
-        GIT RESET HARD 
+    GIT RESET HARD 
             In the last lesson, we undid a commit but kept the changes. 
             We don't want to keep the changes to titles.md, 
             here's how to reset those changes:
 
-            Command: git reset --hard COMMITHASH
+        Command: git reset --hard COMMITHASH
 
             This is useful if you just want to go back to a previous commit and discard all the changes.
 
-        DANGER
+    DANGER
             I want to stress how dangerous this command can be. If you were to simply delete a committed file, 
             it would be trivially easy to recover because it is tracked in Git. 
             However, if you used git reset --hard to undo committing that file, it would be deleted for good.
 
             Always be careful when using git reset --hard. It's a powerful tool, but it's also a dangerous one.
 
-        RESET TO A SPECIFIC COMMIT 
+    RESET TO A SPECIFIC COMMIT 
             If you want to reset back to a specific commit, 
             you can use the git reset --hard command and provide a commit hash. For example:
 
-            Command: git reset --hard <COMMITHASH>
+        Command: git reset --hard <COMMITHASH>
 
             This will reset your working directory and index to the state of that commit, 
             and all the changes made after that commit are lost forever.
@@ -341,15 +341,15 @@ GIT REMOTE
             treat as the "true" repo. It's the one that contains the most up-to-date version
             of the accepted code
 
-            command: git remote add <name> <uri>
+        command: git remote add <name> <uri>
 
-            Beispiel: git remote add origin ../Git_Github_FC_bootDev
+        Beispiel: git remote add origin ../Git_Github_FC_bootDev
     
     FETCH 
             Adding a remote to our Git repo does not mean that we automagically have all the contents of the remote. 
             First, we need to fetch the contents.
 
-            Command: git fetch
+        Command: git fetch
 
             This downloads copies of all the contents of the .git/objects directory 
             (and other book-keeping information) from the remote repository into your current one.
@@ -358,8 +358,8 @@ GIT REMOTE
             Just as we merged branches within a single local repo,
             we can also merge branches between local and remote repos
 
-            COmmand: git merge remote/branch
-            Exp: git merge origin/main
+        COmmand: git merge remote/branch
+        Exp: git merge origin/main
 
     Push 
             Bring the changes to the origin/upstream
@@ -368,6 +368,18 @@ GIT REMOTE
 
             after that we still push to the "origin main", the clue is the branch we want to push to needs to be inactive.
 
-            command: git push remote branch
+        command: git push remote branch
 
     GITHUB REPOS
+
+            GitHub is the most popular website for Git repositories (projects) online. 
+            That is, for hosting "remotes" on a central website. GitHub serves several purposes:
+                * As a backup of all your code on the cloud in case something happens to your computer
+                * As a central place to share your code and collaborate on it with others
+                * As a public portfolio for your coding projects
+
+        GIT != Github
+            It's important to understand that Git and GitHub are not the same! 
+            Git is an open-source command line tool for managing code files. 
+            GitHub and its primary competitors, GitLab and Bitbucket, are commercial web products that use Git. 
+            Their websites give us a way to store our code that's managed by Git.
