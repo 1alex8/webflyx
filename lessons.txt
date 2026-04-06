@@ -399,3 +399,6 @@ GIT REMOTE
         
         Command: 
             git remote add origin <git repo https>
+
+                to make sure the remote was added :
+            git ls-remote
