@@ -360,3 +360,8 @@ GIT REMOTE
 
             COmmand: git merge remote/branch
             Exp: git merge origin/main
+
+    Push 
+            Bring the changes to the origin/upstream
+
+            command: git push remote branch
