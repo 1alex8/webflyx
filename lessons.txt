@@ -342,3 +342,5 @@ GIT REMOTE
             of the accepted code
 
             command: git remote add <name> <uri>
+
+            Beispiel: git remote add origin ../Git_Github_FC_bootDev
