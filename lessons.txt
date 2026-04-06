@@ -364,8 +364,10 @@ GIT REMOTE
     Push 
             Bring the changes to the origin/upstream
 
-            wenn wir lokal üben müssen wir davor nen switch in einen temp_branch machen(auf dem origin)
+           if we use a local repo to practice, we need to switch to a temp_branch
 
-            danach pushen wir trotzdem in den main
+            after that we still push to the "origin main", the clue is the branch we want to push to needs to be inactive.
 
             command: git push remote branch
+
+    GITHUB REPOS
