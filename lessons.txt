@@ -559,4 +559,11 @@ GITIGNORE
                 #Ignore all .txt files
                 *.txt
         
-        
+    WHAT SOULD BE IGNORED
+            Here are some rules of thumb for coding projects:
+
+            1. Ignore things that can be generated(e.g. compiled code, minified files, etc.)
+            2. Ignore dependencies (e.g. node_modules, venv, packages, etc)
+            3. Ignore things taht are personal or specified to how you like to work(e.g editor setting)
+            4. Ignore things that are sensitive or dangerous(e.g. .env files, passwords, API Keys, etc.)
+            
