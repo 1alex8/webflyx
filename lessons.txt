@@ -435,4 +435,4 @@ GIT PULL
 
             if you get a "divergent branches" error , run:
         Command: git config pull.rebase false
-            to make sure git will merge on pull, then retry.
+            to make sure git will merge on pull, then retry. 
