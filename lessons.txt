@@ -551,4 +551,12 @@ GITIGNORE
             Pattern: 
                 *.txt
                 !important.txt
-            
+
+        COMMENTS
+            You can add comments to your .gitignore files by starting a line with a "#":
+
+            Pattern:
+                #Ignore all .txt files
+                *.txt
+        
+        
