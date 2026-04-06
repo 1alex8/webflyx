@@ -364,4 +364,8 @@ GIT REMOTE
     Push 
             Bring the changes to the origin/upstream
 
+            wenn wir lokal üben müssen wir davor nen switch in einen temp_branch machen(auf dem origin)
+
+            danach pushen wir trotzdem in den main
+
             command: git push remote branch
