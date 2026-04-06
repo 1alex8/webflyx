@@ -243,3 +243,8 @@ Rebase:
         git rebase main
 
         Important: we need to be in feature_branch and rebase main not the other way around.
+
+        IF IT ALL FAILS AND WE HAVE A DOZEN REBASE CONFLICTS, WE CAN REVERT THE REBASE,
+        TO THE STATE BEFORE THE REBASE:
+
+        command: git rebase --abort
