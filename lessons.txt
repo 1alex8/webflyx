@@ -420,3 +420,14 @@ GIT PUSH
             You can also delete a remote branch by pushing an empty branch to it:
         
         Command: git push origin :<remotebranch>
+
+
+GIT PULL
+            Fetching is nice, but most of the time we want the actual File changes from a 
+            remote repo, not just the metadate
+
+        Command: git pull [<remote> <branch>]
+
+            The syntax [...] means that the bracketed remote and branch are optional.
+            If you execute git pulll without anything specified
+            it will pull your current branch from the remote repo
