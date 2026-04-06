@@ -262,3 +262,9 @@ Rebase:
         A linear history is generally easier to read, understand, and work with. 
         Some teams enforce the usage of one or the other on their main branch, 
         but generally speaking, you'll be able to do whatever you want with your own branches.
+
+    WARNING
+        you should never rebase a public branch (like main) onto anything else. Other devs have it checked out.
+        And if you change its history, you'll cause a lot of problems for them
+
+        However, if your own branch, you can rebase onto other branches (including main) as much as you want.
