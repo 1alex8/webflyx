@@ -566,4 +566,7 @@ GITIGNORE
             2. Ignore dependencies (e.g. node_modules, venv, packages, etc)
             3. Ignore things taht are personal or specified to how you like to work(e.g editor setting)
             4. Ignore things that are sensitive or dangerous(e.g. .env files, passwords, API Keys, etc.)
-            
+
+
+Rename a commit:
+    git commit --amend
