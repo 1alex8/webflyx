@@ -353,3 +353,10 @@ GIT REMOTE
 
             This downloads copies of all the contents of the .git/objects directory 
             (and other book-keeping information) from the remote repository into your current one.
+    
+    MERGE 
+            Just as we merged branches within a single local repo,
+            we can also merge branches between local and remote repos
+
+            COmmand: git merge remote/branch
+            Exp: git merge origin/main
