@@ -161,6 +161,9 @@ Branch:
             command: git switch -c my_new_branch
 
             The -c flag tells Git to create a new branch if it doesn't already exist.
+
+            if we want to make a branch of an older commit :
+            git switch -c new_branch_name <old commit hash>
         
         When you create a new branch, it uses the current commit you are on as the branch base. 
         For Example: 
