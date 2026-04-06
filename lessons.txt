@@ -234,6 +234,7 @@ Rebase:
                 \
                 D - E  feature_branch
 
+    Rebase command:
         
         So if we create a branch from an old hash:
         git switch -c new_branch_name <old commit hash>
@@ -247,4 +248,17 @@ Rebase:
         IF IT ALL FAILS AND WE HAVE A DOZEN REBASE CONFLICTS, WE CAN REVERT THE REBASE,
         TO THE STATE BEFORE THE REBASE:
 
-        command: git rebase --abort
+            command: git rebase --abort
+
+        
+    When to rebase
+        git rebase and git merge are different tools.
+
+        An advantage of merge is that it preserves the true history of the project. 
+        It shows when branches were merged and where. 
+        One disadvantage is that it can create a lot of merge commits, 
+        which can make the history harder to read and understand.
+
+        A linear history is generally easier to read, understand, and work with. 
+        Some teams enforce the usage of one or the other on their main branch, 
+        but generally speaking, you'll be able to do whatever you want with your own branches.
