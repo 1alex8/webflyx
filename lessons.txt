@@ -344,3 +344,12 @@ GIT REMOTE
             command: git remote add <name> <uri>
 
             Beispiel: git remote add origin ../Git_Github_FC_bootDev
+    
+    FETCH 
+            Adding a remote to our Git repo does not mean that we automagically have all the contents of the remote. 
+            First, we need to fetch the contents.
+
+            Command: git fetch
+
+            This downloads copies of all the contents of the .git/objects directory 
+            (and other book-keeping information) from the remote repository into your current one.
