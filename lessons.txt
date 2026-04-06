@@ -233,4 +233,13 @@ Rebase:
         A - B - C    main
                 \
                 D - E  feature_branch
+
         
+        So if we create a branch from an old hash:
+        git switch -c new_branch_name <old commit hash>
+
+        and have made changes we can now put feature branch at the top by:
+
+        git rebase main
+
+        Important: we need to be in feature_branch and rebase main not the other way around.
