@@ -335,6 +335,8 @@ GIT REMOTE
             In git, another repo is called a "remote". The standard convention is that when you're treating
             the remote as the "authoritative source of truth" (such as github) you would name it "origin".
 
+            Sometimes if you're on a bigger team "upstram' is the "asot" and "origin" is the fork you're working on
+
             By "authoritative source of truth" we mean that it's the one you and yor team
             treat as the "true" repo. It's the one that contains the most up-to-date version
             of the accepted code
