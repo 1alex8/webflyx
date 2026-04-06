@@ -268,3 +268,10 @@ Rebase:
         And if you change its history, you'll cause a lot of problems for them
 
         However, if your own branch, you can rebase onto other branches (including main) as much as you want.
+
+
+RESET
+
+    Undoing changes
+        One of the majo benefits of using Git is the ability to undo changes. There are a lot of diffrent ways to do this, 
+        but first, we'll start by going back in the commit history without discarding changes
