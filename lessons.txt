@@ -431,3 +431,8 @@ GIT PULL
             The syntax [...] means that the bracketed remote and branch are optional.
             If you execute git pulll without anything specified
             it will pull your current branch from the remote repo
+
+
+            if you get a "divergent branches" error , run:
+        Command: git config pull.rebase false
+            to make sure git will merge on pull, then retry.
