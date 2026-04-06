@@ -397,8 +397,26 @@ GIT REMOTE
 
             now add a remote to this repo by running
         
-        Command: 
-            git remote add origin <git repo https>
+        Command: git remote add origin <git repo https>
 
                 to make sure the remote was added :
-            git ls-remote
+        Command :git ls-remote
+
+GIT PUSH
+            The git push command pushes (sends) local changes to any "remote" - in our case, GitHub. 
+            For example, to push our local main branch's commits to the remote origin's main branch we would run:
+
+        Command: git push origin main
+
+            You need to be authenticated with the remote to push changes, which you should have done in the last lesson.
+
+    Alternative Options:
+            You can also push a local branch to a remote with a different name:
+        
+        Command: git push origin <localbranch>:<remotebranch>
+
+            It's less common to do this, but nice to know.
+
+            You can also delete a remote branch by pushing an empty branch to it:
+        
+        Command: git push origin :<remotebranch>
