@@ -517,4 +517,8 @@ GITIGNORE
             * src/node_modules2/code.js 
             * env/node_modules_3
 
-            
+    Nested GITIGNORE
+            Your .gitignore file does not necessarily need to be at the root of your project.
+
+            It's fairly common to have multiple .gitignore files in different directories throughout a project. 
+            A nested .gitignore file only applies to the directory it's in and its subdirectories.
